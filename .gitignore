@@ -1,4 +1,6 @@
 *.gem
+.vscode
+vendor
 .bundle
 .jekyll-cache
 .sass-cache

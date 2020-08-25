@@ -1,1 +1,43 @@
-{{ content }}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <!-- General meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="{{ site.encoding }}" />
+
+  {% if page.indexing == false %}
+    <meta name="robots" content="noindex">
+  {% endif %}
+  
+  {% if page.collectionpage %}
+    {% seo title=false %}
+
+    {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+    <title>{{ collectiondata.title }} - {{ site.title }}</title>
+    <meta property="og:title" content="{{ collectiondata.title }}">
+    <meta name="description" content="{{ collectiondata.description }}">
+    <meta property="og:description" content="{{ collectiondata.description }}">
+  {% else %}
+    {% seo %}
+  {% endif %}
+  
+  {% if site.css_inline == true %}
+    {% include site-styles.html %}
+  {% else %}
+    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+  {% endif %}
+</head>
+
+<body>
+  {%- include header.html -%}
+  
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- include footer.html -%}
+
+</body>
+</html>
