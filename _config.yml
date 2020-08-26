@@ -2,11 +2,26 @@
 plugins:
   - jekyll-seo-tag
 
+# Gem settings
+author:
+  name: Matt Shultz # jekyll-seo-tag > default author
+  email: matt@shultz.dev
+social: # jekyll-seo-tag > social overrides
+  name: David Darnes # jekyll-seo-tag > real name
+  links: # jekyll-seo-tag > social aliases (sameAs)
+    github: popshift
+    linkedin: matt-shultz-85605ba6
+
 # Site settings
 encoding: utf-8 # Make sure the encoding is right
 lang: en-US # Set the site language
 title: "Popfolio" # Site name or title, also used in jekyll-seo-tag
+header_title: "PF" # Title to display in the header, will be surrounded by < and />
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
+avatar: "assets/avatar.png" # Displays on the home page. For best results, use a square image at least 100px
+intro:
+  main: "Hi, my name is Matt Shultz" # This is your tag line that displays under your avatar on the home page
+  sub: "I'm an aspiring Web Developer" # This is the second line of the tag line
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
