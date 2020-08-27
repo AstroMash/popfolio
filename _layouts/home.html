@@ -2,8 +2,17 @@
 layout: default
 ---
 
-<img class="avatar" src="{{ site.avatar | relative_url }}" />
-<h2>{{ site.intro.main }}</h2>
-<h2>{{ site.intro.sub }}</h2>
+<img class="avatar" src="{{ site.avatar | relative_url }}"/>
+{% if site.intro.main %}
+  <h2 class="intro intro-main">
+    {{ site.intro.main }}
+    <span aria-label="wink" role="img">👋</span>
+  </h2>
+{% endif %}
+{% if site.intro.main %}
+  <h2 class="intro intro-sub">{{ site.intro.sub }}</h2>
+{% endif %}
 
-{{ content }}
+<section class="content">
+  {{ content }}
+</section>
