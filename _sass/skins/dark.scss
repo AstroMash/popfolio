@@ -12,7 +12,7 @@ $text-color: #eeeeee !default;
 $background-color: #222831 !default;
 $code-background-color: #212121 !default;
 
-$link-base-color: #f5ab35 !default;
+$link-base-color: $brand-contrast-color !default;
 $link-visited-color: $link-base-color !default;
 $link-hover-color: $text-color !default;
 

@@ -22,6 +22,7 @@ avatar: "assets/avatar.png" # Displays on the home page. For best results, use a
 intro:
   main: "Hi, my name is Matt Shultz" # This is your tag line that displays under your avatar on the home page. Comment out to hide.
   sub: "I'm an aspiring Web Developer" # This is the second line of the tag line. Comment out to hide.
+footer_message: "#blacklivesmatter ✊🏾" # Comment out to hide. Appears at the bottom of the page, centered above the social links.
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
