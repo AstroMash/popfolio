@@ -2,17 +2,24 @@
 layout: default
 ---
 
-<img class="avatar" src="{{ site.avatar | relative_url }}"/>
+<img class="avatar" src="{{ site.avatar | relative_url }}" />
 {% if site.intro.main %}
-  <h2 class="intro intro-main">
-    {{ site.intro.main }}
-    <span aria-label="wink" role="img">👋</span>
-  </h2>
-{% endif %}
-{% if site.intro.main %}
-  <h2 class="intro intro-sub">{{ site.intro.sub }}</h2>
+<h2 class="intro intro-main">
+  {{ site.intro.main }}
+  <span aria-label="wink" role="img">👋</span>
+</h2>
+{% endif %} {% if site.intro.sub %}
+<h2 class="intro intro-sub">{{ site.intro.sub }}</h2>
 {% endif %}
 
-<section class="content">
-  {{ content }}
+<section class="content">{{ content }}</section>
+
+<section class="skills">
+  <h2>Skills I'm actively building...</h2>
+  <div class="skill-item">Javascript</div>
+  <div class="skill-item">HTML</div>
+  <div class="skill-item">CSS</div>
+  <div class="skill-item">React</div>
+  <div class="skill-item">Python</div>
+  <div class="skill-item">Node.JS</div>
 </section>

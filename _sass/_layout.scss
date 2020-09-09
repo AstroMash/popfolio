@@ -12,7 +12,7 @@
 
 .site-title {
   @include relative-font-size(2.25);
-  font-weight: 400;
+  font-weight: $extrabold-font-weight;
   letter-spacing: -1px;
   margin-bottom: 0;
   float: left;
@@ -37,6 +37,7 @@
 
 .title-bracket {
   color: $title-bracket-color;
+  font-weight: $thin-font-weight;
 }
 
 .site-nav {
@@ -92,6 +93,7 @@
 
     & .link-bracket {
       color: $brand-color-dark;
+      margin-left: 0.2rem;
     }
 
     &:hover {
@@ -231,6 +233,26 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+}
+
+/**
+ * Skills
+ */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills > h2 {
+  flex: 0 0 100%;
+}
+
+.skills .skill-item {
+  flex-grow: 1;
+}
+
+.skills > .skill-item + .skills > .skill-item {
+  margin-left: 2%;
 }
 
 /**
