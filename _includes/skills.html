@@ -1,0 +1,15 @@
+{% if site.skills %}
+  <section class="skills">
+    <h2>Skills I'm actively building...</h2>
+
+    {% for item in site.skills %}
+      <div class="skill-item">
+        <svg class="">
+          <use xlink:href="{{ '/assets/popfolio-skills-icons.svg#' | append: item.svg_id | relative_url }}"></use>
+        </svg>
+        {{ item.skill }}
+      </div>
+    {% endfor %}
+
+  </section>
+{% endif %}

@@ -171,7 +171,6 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $border-color-01;
   padding: $spacing-unit 0;
 }
 
@@ -196,8 +195,16 @@
 }
 
 .social-links {
-  @include relative-font-size(0.9375);
+  // @include relative-font-size(0.9375);
   color: $brand-color;
+
+  & a {
+    color: $brand-color;
+
+    &:hover {
+      color: $brand-contrast-color;
+    }
+  }
 }
 
 /**
@@ -240,19 +247,27 @@
  */
 .skills {
   display: flex;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
 }
 
 .skills > h2 {
   flex: 0 0 100%;
 }
 
-.skills .skill-item {
+.skills > .skill-item {
+  text-align: center;
   flex-grow: 1;
 }
 
-.skills > .skill-item + .skills > .skill-item {
-  margin-left: 2%;
+.skills > .skill-item > svg {
+  fill: $brand-color;
+  max-height: 92px;
+  max-width: 92px;
+  display: block;
+  margin: 0 auto;
 }
 
 /**
@@ -320,14 +335,14 @@
   margin: 0 auto;
   li {
     float: left;
-    margin: 5px 10px 5px 0;
+    // margin: 5px 10px 5px 0;
     &:last-of-type {
       margin-right: 0;
     }
     a {
       display: block;
       padding: $spacing-unit / 4;
-      border: 1px solid $border-color-01;
+      // border: 1px solid $border-color-01;
       &:hover {
         border-color: $border-color-02;
       }

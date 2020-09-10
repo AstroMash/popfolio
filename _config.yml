@@ -11,6 +11,34 @@ social: # jekyll-seo-tag > social overrides
   links: # jekyll-seo-tag > social aliases (sameAs)
     github: popshift
     linkedin: matt-shultz-85605ba6
+    # twitter: jekyllrb
+    # devto: jekyll
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    # pinterest: jekyll
+    # youtube: jekyll
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
 # Site settings
 encoding: utf-8 # Make sure the encoding is right
@@ -24,6 +52,21 @@ intro:
   sub: "I'm an aspiring Web Developer" # This is the second line of the tag line. Comment out to hide.
 footer_message: "#blacklivesmatter ✊🏾" # Comment out to hide. Appears at the bottom of the page, centered above the social links.
 
+# The following skills are displayed on the home page. The svg_id should equal the fontawesome code of the icon.
+# Follow the guide in the readme for adding any missing icons to the popfolio-skills-icons.svg file
+skills:
+  - skill: Javascript
+    svg_id: js-square
+  - skill: HTML
+    svg_id: html5
+  - skill: CSS
+    svg_id: css3-alt
+  - skill: React
+    svg_id: react
+  - skill: Python
+    svg_id: python
+  - skill: Node.JS
+    svg_id: node-js
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:
