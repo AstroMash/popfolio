@@ -67,6 +67,29 @@ skills:
     svg_id: python
   - skill: Node.JS
     svg_id: node-js
+
+projects:
+  # Project 1
+  - title: Bootstrap Portfolio
+    description: One of my earlier portfolio sites, this was built as a challenge for freeCodeCamp. I used Bootstrap 4 and kept the design very to the point with a single page layout.
+    url: https://codepen.io/popshift/full/EoVpbw
+    image: assets/projects/bootstrap-portfolio.png
+    featured: true
+    tags: [html, css, bootstrap]
+  # Project
+  - title: DiceRoller
+    description: This was my first adventure in C#. I'd previously written a simple dice roller in JS and thought it was a great project to test the waters in a new language. I added a small easter egg when you roll 5 dice of the same number.
+    url: https://github.com/popshift/DiceRoller
+    image: assets/projects/diceroller.png
+    featured: true
+    tags: [c#]
+  # Project
+  - title: InTouch
+    description: InTouch is my current, actively-developing project. It's an application I've written for work, so I'm unable to share source code. The front-end is built with React and a combination of Material-UI, Ant Design, and custom components. API requests are proxied through a Node/Express backend to the ConnectWise Manage API. Authentication is managed with an Auth0 integration. Users are able to manage service requests and client information in a clean, fast UI that was designed with a mobile-first approach.
+    url:
+    image: assets/projects/intouch.gif
+    featured: true
+    tags: [javascript, react, rest, node, express]
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 #header_pages:

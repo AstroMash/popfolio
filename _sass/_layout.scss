@@ -243,14 +243,18 @@
 }
 
 /**
- * Skills
+ * Skills / Projects
  */
+.skills,
+.projects {
+  margin-bottom: $spacing-unit;
+}
+
 .skills {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   padding: 0;
-  margin: 0;
 }
 
 .skills > h2 {
@@ -268,6 +272,34 @@
   max-width: 92px;
   display: block;
   margin: 0 auto;
+}
+
+.projects > .project-item {
+  display: flex;
+  background-color: $box-background-color;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.project-image {
+  flex: 1;
+  text-align: center;
+}
+
+.project-image img {
+  max-height: 250px;
+}
+
+.project-details {
+  flex: 2;
+  margin-left: 1.5rem;
+}
+
+.project-item h2 {
+  color: $brand-contrast-color;
+  font-size: 18px;
+  font-weight: $semibold-font-weight;
 }
 
 /**
