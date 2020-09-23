@@ -1,25 +1,22 @@
 {% if site.projects %}
-  <section class="projects">
-    <h2>Projects I've worked on...</h2>
+<section class="projects">
+  <h2>Projects I've worked on...</h2>
 
-    {% for item in site.projects %}
+  {% for item in site.projects %} {% if item.image contains '://' %} {% assign
+  image = item.image %} {% else %} {% assign image = item.image | relative_url
+  %} {% endif %}
 
-      {% if item.image contains '://' %}
-        {% assign image = item.image %}
-      {% else %}
-        {% assign image = item.image | relative_url %}
-      {% endif %}
-
-      <div class="project-item">
-        <div class="project-image">
-          <img src="{{ image }}" alt="{{ item.title }}">
-        </div>
-        <div class="project-details">
-          <h2>{{ item.title }}</h2>
-          <p>{{ item.description }}</p>
-        </div>
-      </div>
-    {% endfor %}
-
-  </section>
+  <div class="project-item">
+    <div class="project-image">
+      <a href="{{ item.url }}"
+        ><img src="{{ image }}" alt="{{ item.title }}"
+      /></a>
+    </div>
+    <div class="project-details">
+      <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
+      <p>{{ item.description }}</p>
+    </div>
+  </div>
+  {% endfor %}
+</section>
 {% endif %}
