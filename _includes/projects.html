@@ -2,19 +2,26 @@
 <section class="projects">
   <h2>Projects I've worked on...</h2>
 
-  {% for item in site.projects %} {% if item.image contains '://' %} {% assign
-  image = item.image %} {% else %} {% assign image = item.image | relative_url
-  %} {% endif %}
+  {% for project in site.projects %} {% if project.image contains '://' %} {%
+  assign image = project.image %} {% else %} {% assign image = project.image |
+  relative_url %} {% endif %}
 
   <div class="project-item">
     <div class="project-image">
-      <a href="{{ item.url }}"
-        ><img src="{{ image }}" alt="{{ item.title }}"
+      <a href="{{ project.url }}"
+        ><img src="{{ image }}" alt="{{ project.title }}"
       /></a>
     </div>
     <div class="project-details">
-      <h2><a href="{{ item.url }}">{{ item.title }}</a></h2>
-      <p>{{ item.description }}</p>
+      <h2><a href="{{ project.url }}">{{ project.title }}</a></h2>
+      <p>{{ project.description }}</p>
+      {% for tag in project.tags %} {% if forloop.first %}
+      <ul class="tags">
+        {% endif %}
+        <li><a href="#" class="tag">{{ tag }}</a></li>
+        {% if forloop.last %}
+      </ul>
+      {% endif %} {% endfor %}
     </div>
   </div>
   {% endfor %}
