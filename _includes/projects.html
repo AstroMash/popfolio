@@ -1,7 +1,10 @@
 {% if site.projects %}
 <section class="projects">
   <h2>Projects I've worked on...</h2>
-
+  <p>
+    Here are a few projects I've put together recently. Want to see more? Check
+    out my <a href="/projects.html">Projects</a> page.
+  </p>
   {% for project in site.projects %} {% if project.image contains '://' %} {%
   assign image = project.image %} {% else %} {% assign image = project.image |
   relative_url %} {% endif %}
