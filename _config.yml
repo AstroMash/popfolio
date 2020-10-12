@@ -48,9 +48,9 @@ header_title: "PF" # Title to display in the header, will be surrounded by < and
 css_inline: false # Will insert all styles into a single <style> block in the <head> element and remove the style <link> reference
 avatar: "assets/avatar.png" # Displays on the home page. For best results, use a square image at least 100px
 intro:
-  main: "Hi, my name is Matt Shultz" # This is your tag line that displays under your avatar on the home page. Comment out to hide.
-  sub: "I'm an aspiring Web Developer" # This is the second line of the tag line. Comment out to hide.
-footer_message: "#blacklivesmatter ✊🏾" # Comment out to hide. Appears at the bottom of the page, centered above the social links.
+  main: "Hi, my name is Popshift" # This is your tag line that displays under your avatar on the home page. Comment out to hide.
+  sub: "I made this theme for you" # This is the second line of the tag line. Comment out to hide.
+footer_message: "#coolhashtag 👍" # Comment out to hide. Appears at the bottom of the page, centered above the social links.
 
 # The following skills are displayed on the home page. The svg_id should equal the fontawesome code of the icon.
 # Follow the guide in the readme for adding any missing icons to the popfolio-skills-icons.svg file
@@ -90,24 +90,3 @@ projects:
     image: https://via.placeholder.com/250x200
     featured: true
     tags: [html, css, javascript]
-  # Project
-  # - title: Bootstrap Portfolio
-  #   description: One of my earlier portfolio sites, this was built as a challenge for freeCodeCamp. I used Bootstrap 4 and kept the design very to the point with a single page layout.
-  #   url: https://codepen.io/popshift/full/EoVpbw
-  #   image: assets/projects/bootstrap-portfolio.png
-  #   featured: true
-  #   tags: [html, css, bootstrap]
-  # Project
-  # - title: DiceRoller
-  #   description: This was my first adventure in C#. I'd previously written a simple dice roller in JS and thought it was a great project to test the waters in a new language. I added a small easter egg when you roll 5 dice of the same number.
-  #   url: https://github.com/popshift/DiceRoller
-  #   image: assets/projects/diceroller.png
-  #   featured: true
-  #   tags: [c#]
-  # Project
-  # - title: InTouch
-  #   description: InTouch is my current, actively-developing project. It's an application I've written for work, so I'm unable to share source code. The front-end is built with React and a combination of Material-UI, Ant Design, and custom components. API requests are proxied through a Node/Express backend to the ConnectWise Manage API. Authentication is managed with an Auth0 integration. Users are able to manage service requests and client information in a clean, fast UI that was designed with a mobile-first approach.
-  #   url:
-  #   image: assets/projects/intouch.gif
-  #   featured: true
-  #   tags: [javascript, react, rest, node, express]
