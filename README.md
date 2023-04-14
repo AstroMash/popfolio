@@ -1,11 +1,8 @@
 # popfolio
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+_As of April 2023, I'm refocusing on some of my old work that needs some attention, including this theme. Updates are coming over the next few weeks._
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
+Popfolio is a simple, easily configurable portfolio theme that you can use to introduce yourself and display your work. This theme is still very young and will be updated with more features as time goes on. Configuration instructions coming soon.
 
 ## Installation
 
@@ -23,19 +20,23 @@ theme: popfolio
 
 And then execute:
 
-    $ bundle
+```sh
+bundle
+```
 
 Or install it yourself as:
 
-    $ gem install popfolio
+```sh
+gem install popfolio
+```
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Documentation coming soon (as of April 2023).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome in the [popfolio GitHub repo](https://github.com/AstroMash/popfolio). This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -49,4 +50,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `popfolio
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
