@@ -4,6 +4,8 @@ _As of April 2023, I'm refocusing on some of my old work that needs some attenti
 
 Popfolio is a simple, easily configurable portfolio theme that you can use to introduce yourself and display your work. This theme is still very young and will be updated with more features as time goes on. Configuration instructions coming soon.
 
+[![Gem Version](https://badge.fury.io/rb/popfolio.svg)](https://badge.fury.io/rb/popfolio)
+
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
